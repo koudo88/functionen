@@ -3,5 +3,5 @@ def berechne_brutto(netto_preis, steuersatz = 0.19):
   return brutto_preis
 
 
-berechne_brutto(4000)
-berechne_brutto(4000, 0.07)
+print(berechne_brutto(4000))
+berechne_brutto((4000, 0.07))
