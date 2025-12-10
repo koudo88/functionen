@@ -1,14 +1,13 @@
 
 lagerbestand = 50 
-def wareneingang(): 
-global lagerbestand 
-lagerbestand += 10 
-print(f"Neuer Bestand: {lagerbestand}") 
+def wareneingang(menge): 
+  bestand = lagerbestand + menge
+return bestand 
 
 
-def warenausgang(): 
-global lagerbestand 
-lagerbestand -= 5 
-print(f"Neuer Bestand: {lagerbestand}") 
-wareneingang() 
-warenausgang()
+def warenausgang(menge): 
+ neue_bestand = lagerbestand - menge
+return neue_bestand 
+
+print(wareneingang(menge))
+print(warenausgang(menge))
